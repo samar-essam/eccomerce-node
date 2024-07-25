@@ -8,7 +8,7 @@ import cors from 'cors'
 
 //set directory dirname 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-dotenv.config({ path: path.join(__dirname, './config/.env') })
+dotenv.config()
 
 const port = process.env.PORT || 3000
 const app = express()
